@@ -1,13 +1,12 @@
-// const {calculateSum, calculateMultiply} = require('./calculate');
-// const {anotherModule, anotherVariable} = require('./xyz');
-import {anotherModule, anotherVariable} from './xyz.js';
+setTimeout(() => {
+  console.log("Timeout");
+}, 0);
 
-var name = "Namaste";
+setImmediate(() => {
+  console.log("Immediate");
+});
 
-var a = 10;
-
-console.log(name + ' ' + a);
-// calculateSum(5, 10);
-// calculateMultiply(5, 10);
-console.log(anotherVariable);
-anotherModule();
+var a = 2;
+var name = "kathir";
+console.log(a);
+console.log(name);
